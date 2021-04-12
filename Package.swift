@@ -11,6 +11,16 @@ let package = Package(
     .library(
       name: "CryptoSwift",
       targets: ["CryptoSwift"]
+    ),
+    .library(
+      name: "CryptoSwift-Static",
+      type: .static,
+      targets: ["CryptoSwift"]
+    ),
+    .library(
+      name: "CryptoSwift-Dynamic",
+      type: .dynamic,
+      targets: ["CryptoSwift"]
     )
   ],
   targets: [
